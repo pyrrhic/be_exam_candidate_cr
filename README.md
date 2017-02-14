@@ -17,7 +17,7 @@
    I know this can be a 'sensitive' subject, so I wanted to be clear why I went the route I did.
 
 ## How To Run the jar
-You'll need at least Java 7+ if you just want to run the executable jar.
+You'll only need Java 7+ if you want to run the executable jar.
 
 1. Download the standalone jar in the target folder.
 1. Open a command prompt and navigate to the jar.
