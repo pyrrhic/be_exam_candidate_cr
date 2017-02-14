@@ -1,14 +1,31 @@
 # SCOIR Technical Interview for Back-End Engineers
-This repo contains an exercise intended for Back-End Engineers.
 
-## Instructions
-1. Fork this repo.
-1. Using technology of your choice, complete [the assignment](./Assignment.md).
-1. Update this README with
-    * a `How-To` section containing any instructions needed to execute your program.
-    * an `Assumptions` section containing documentation on any assumptions made while interpreting the requirements.
-1. Before the deadline, submit a pull request with your solution.
+## Additional/clarification requirements via emails with Steve
+1. Once a file has been processed, the system deletes it from the input-directory.
+1. Files will be considered new if the file name has not been recorded as processed before.
+1. In the event of file name collision, the latest file should overwrite the earlier version.
+1. The system should continue in the event of an invalid row; all errors should be collected and added to the corresponding error csv
+1. There should be one error file created per input file (if errors exist)
+1. The error file should match the name of the input file
 
-## Expectations
-1. Please take no more than 8 hours to work on this exercise. Complete as much as possible and then submit your solution.
-1. This exercise is meant to showcase how you work. With consideration to the time limit, do your best to treat it like a production system.
+## Assumptions
+1. csv files will have headers
+1. csv files dropped into the input directory will be valid csv files
+1. The set of 'files already processed' will be cleared when the program ends. NOTE: This is a very slow memory leak, because this set is never cleared while the program is running.
+1. Expecting to receive csv files of any size, from empty to as big as the hard drive will allow.
+1. Assuming that 8 hours is the hard limit, it's better to have a program that works with fewer automated tests, rather than a program that does not work and has 100% automated coverage.
+   I know this can be a 'sensitive' subject, so I wanted to be clear why I went the route I did.
+
+## How To Run the jar
+You'll need at least Java 7+ if you just want to run the executable jar.
+1. Download the standalone jar in the target folder.
+1. Open a command prompt and navigate to the jar.
+1. Run: java -jar scoir-0.1.0-SNAPSHOT-standalone.jar "FULL_PATH_TO_INPUT_DIRECTORY" "FULL_PATH_TO_OUTPUT_DIRECTORY" "FULL_PATH_TO_ERROR_DIRECTORY"
+    ex. java -jar scoir-0.1.0-SNAPSHOT-standalone.jar "C:\Users\Chris\Desktop\input" "C:\Users\Chris\Desktop\output" "C:\Users\Chris\Desktop\error"
+
+## How to compile and run
+1. You'll need at least Java 7+ installed.
+1. Download the Clojure build tool, Lein, from https://leiningen.org/#install
+1. Open a command prompt and navigate to the root of the project.
+1. Type in 'lein run', and it will compile and run the program.
+
