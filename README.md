@@ -19,7 +19,7 @@
 ## How To Run the jar
 You'll only need Java 7+ if you want to run the executable jar.
 
-1. Download the standalone jar in the target folder.
+1. Download the standalone jar from the target folder.
 1. Open a command prompt and navigate to the jar.
 1. Run: java -jar scoir-0.1.0-SNAPSHOT-standalone.jar "FULL_PATH_TO_INPUT_DIRECTORY" "FULL_PATH_TO_OUTPUT_DIRECTORY" "FULL_PATH_TO_ERROR_DIRECTORY"
 
