@@ -16,7 +16,7 @@
 1. Assuming that 8 hours is the hard limit, it's better to have a program that works with fewer automated tests, rather than a program that does not work and has 100% automated coverage.
    I know this can be a 'sensitive' subject, so I wanted to be clear why I went the route I did.
 
-## How To Run the jar
+## How-To Run the jar
 You'll only need Java 7+ if you want to run the executable jar.
 
 1. Download the standalone jar from the target folder.
@@ -25,7 +25,7 @@ You'll only need Java 7+ if you want to run the executable jar.
 
     ex. java -jar scoir-0.1.0-SNAPSHOT-standalone.jar "C:\Users\C\input" "C:\Users\C\output" "C:\Users\C\error"
 
-## How to compile and run
+## How-To compile and run
 1. You'll need at least Java 7+ installed.
 1. Download the Clojure build tool, Lein, from https://leiningen.org/#install
 1. Open a command prompt and navigate to the root of the project.
